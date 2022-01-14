@@ -1,0 +1,81 @@
+@import './variables.scss';
+
+body {
+    margin: 0;
+    color: $primary-text-color;
+}
+
+html {
+    font-family: $primary-font;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    color: $primary-text-color;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+button {
+    transition: all 0.3s ease;
+    background: $primary-color;
+    text-transform: 'none';
+    font-weight: 300;
+    color: $secondary-text-color;
+    padding: 9px 13px;
+    margin: 1px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+input {
+    margin: 10px 5px;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    padding: 7px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error_text {
+    text-align: center;
+    color: $error-text-color;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    border-radius: 3px;
+    background: $color_bg;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+}
